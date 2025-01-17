@@ -1,3 +1,4 @@
 # Build infrastructure
+/ @gradle/bt-jvm
 .teamcity/ @gradle/bt-developer-productivity
 .github/ @gradle/bt-developer-productivity
