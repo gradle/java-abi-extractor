@@ -203,14 +203,13 @@ class ApiClassExtractorTest extends ApiClassExtractorTestSupport {
         extractedA.STATIC_IN_A()
 
         then:
-        thrown(Error)
+        noExceptionThrown()
 
         when:
         extractedB.STATIC_IN_B()
 
         then:
-        thrown(Error)
-
+        noExceptionThrown()
     }
 
     void "static initializer is removed"() {
@@ -241,8 +240,7 @@ class ApiClassExtractorTest extends ApiClassExtractorTestSupport {
         clazz.forceInit()
 
         then:
-        ex = thrown(Error)
-        ex.message == null
+        noExceptionThrown()
     }
 
     void "constant initial value for #type is #expected"() {
