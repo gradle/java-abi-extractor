@@ -10,7 +10,7 @@ plugins {
     id("net.ltgt.errorprone").version("4.1.0")
 }
 
-group = "org.gradle.tools"
+group = "org.gradle.buildtool.internal"
 
 jgitver {
     nonQualifierBranches("main")
