@@ -10,7 +10,7 @@ plugins {
     id("net.ltgt.errorprone").version("4.1.0")
 }
 
-group = "org.gradle.abi-extractor"
+group = "org.gradle.tools"
 
 jgitver {
     nonQualifierBranches("main")
